@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Title and Favicon -->
+    <title>Pig Latin</title>
+</head>
+<style>
+    .card-header {
+        border-bottom: white 1px solid;
+    }
+    
+    textarea {
+        background-color: #212529 !important;
+    }
+</style>
+
+<body class="bg-dark">
+    <div class="container">
+        <section class="shadow-lg text-center mb-5 bg-dark">
+            <h3 class="display-3 p-5 text-light">Pig Latin</h3>
+        </section>
+        <section class="row text-light">
+            <div class="col-md-6 col-12">
+                <div class="card mb-3">
+                    <h5 class="card-header display-5 bg-dark">Original Text</h5>
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Enter Some Noisy text..</h5>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" style="height: 100px;" placeholder="Here Goes Nothing" id="input-text"></textarea>
+                            <label for="pig-latinOriginal">Some Filler Noise..</label>
+                        </div>
+                        <a id="input-btn" class="btn btn-outline-light btn-lg">Convert</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card mb-5">
+                    <h5 class="card-header display-5 bg-dark">Pig-Latin Output</h5>
+                    <div class="card-body bg-dark">
+                        <p id="output" class="lead m-2">Here Comes Nothing</p>
+                        <hr class="my-5">
+                        <a id="clear-btn" class="btn btn-outline-light btn-lg">Clear</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
