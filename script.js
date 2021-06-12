@@ -20,10 +20,16 @@ function convert(original) {
     }
     let convertedSentence = convertedArray.join(" ");
     return convertedSentence;
-}
+};
 
+// Example
+// console.log(convert('the quick brown fox jumps over the lazy dog'));
 
-function convert_1() {
-    originalValue = document.getElementById("original_sentence").value;
-    document.getElementById("pig_latined").value = convert(originalValue);
-}
+// Get it from DOM
+
+let inputButton = document.getElementById('input-btn');
+
+inputButton.addEventListener('click', function() {
+    let originalText = document.getElementById('input-text');
+    console.log(originalText.value);
+})
