@@ -1,3 +1,5 @@
+"use strict"
+
 function convert(original) {
 
     let originalArray = original.split(' ');
@@ -6,6 +8,7 @@ function convert(original) {
     for (let originalWord of originalArray) {
         if ('aeiou'.includes(originalWord[0])) convertedArray.push(originalWord + "yay");
         else {
+            let vowelIndex = 0;
             for (let letter of originalWord) {
                 // Loop through until the first vowel is found
                 if ('aeiou'.includes(letter)) {
@@ -14,7 +17,8 @@ function convert(original) {
                 }
             }
             // Compose final wording
-            let convertedCons = originalWord.slice(vowelIndex + originalWord.slice(0, vowelIndex)) + "ay";
+            // let convertedCons = originalWord.slice(vowelIndex + originalWord.slice(0, vowelIndex)) + "ay";
+            let convertedCons = originalWord.slice(0, vowelIndex) + "ay";
             convertedArray.push(convertedCons);
         }
     }
