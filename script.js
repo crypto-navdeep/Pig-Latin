@@ -1,7 +1,7 @@
 function convert(original) {
 
     let originalArray = original.split(" ");
-    let convertedArray = []
+    let convertedArray = [];
 
     for (let originalWord of originalArray) {
         if ('aeiou'.includes(originalWord[0])) convertedArray.push(originalWord + "yay");
@@ -31,5 +31,8 @@ let inputButton = document.getElementById('input-btn');
 
 inputButton.addEventListener('click', function() {
     let originalText = document.getElementById('input-text');
+    let pigLatinPara = document.getElementById('output-text');
     console.log(originalText.value);
+    pigLatinPara.innerHtml = convert(originalText);
+
 })
