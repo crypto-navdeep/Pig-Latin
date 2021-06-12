@@ -33,11 +33,9 @@ function convert(original) {
 
 let inputButton = document.getElementById('input-btn');
 
-function iExecuteWhatIamProgrammedFor() {
+inputButton.addEventListener('click', function() {
     let originalText = document.getElementById('input-text');
     let pigLatinPara = document.getElementById('output-text');
-    console.log(originalText.value);
-    pigLatinPara.innerHtml = convert(originalText.value);
-};
-
-inputButton.addEventListener('click', iExecuteWhatIamProgrammedFor());
+    pigLatinPara.innerText = convert(originalText.value);
+    originalText.value = "";
+});
