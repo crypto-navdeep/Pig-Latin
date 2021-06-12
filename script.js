@@ -1,6 +1,6 @@
 function convert(original) {
 
-    let originalArray = original.split(" ");
+    let originalArray = original.split(' ');
     let convertedArray = [];
 
     for (let originalWord of originalArray) {
@@ -14,7 +14,7 @@ function convert(original) {
                 }
             }
             // Compose final wording
-            let convertedCons = originalWord.slice(vowelIndex) + originalWord.slice(0, vowelIndex) + "ay";
+            let convertedCons = originalWord.slice(vowelIndex + originalWord.slice(0, vowelIndex)) + "ay";
             convertedArray.push(convertedCons);
         }
     }
@@ -29,10 +29,11 @@ function convert(original) {
 
 let inputButton = document.getElementById('input-btn');
 
-inputButton.addEventListener('click', function() {
+function iExecuteWhatIamProgrammedFor() {
     let originalText = document.getElementById('input-text');
     let pigLatinPara = document.getElementById('output-text');
     console.log(originalText.value);
-    pigLatinPara.innerHtml = convert(originalText);
+    pigLatinPara.innerHtml = convert(originalText.value);
+};
 
-})
+inputButton.addEventListener('click', iExecuteWhatIamProgrammedFor());
