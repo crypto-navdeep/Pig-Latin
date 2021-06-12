@@ -37,5 +37,4 @@ inputButton.addEventListener('click', function() {
     let originalText = document.getElementById('input-text');
     let pigLatinPara = document.getElementById('output-text');
     pigLatinPara.innerText = convert(originalText.value);
-    originalText.value = "";
 });
