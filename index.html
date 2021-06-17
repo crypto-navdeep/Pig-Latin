@@ -6,23 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
     <!-- Title and Favicon -->
     <title>Pig Latin</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('//fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     #output-text {
         font-family: 'Open Sans', sans-serif;
     }
     
     a {
-        color: black;
         text-decoration: none;
-    }
-    
-    button a:hover {
-        color: white;
     }
 </style>
 
@@ -63,33 +58,25 @@
             <h3 class="display-3 my-3 float-left">What is Pig-Latin ?</h3>
             <p class="lead" id="pig-latin-explanation"></p>
             <br>
-            <button type="button" class="btn btn-outline-dark btn-lg mb-5">
-                <a href="#top">Back to Top
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                    </svg>
-                </a>
-            </button>
+            <a href="#top" class="btn btn-outline-dark btn-lg mb-5">Back to Top
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg>
+            </a>
         </div>
-        <hr class="my-5">
-    </div>
-
-
-    <div class="container">
-
+        <hr class="my-4">
         <div class="row">
-            <div class="col-md-9 col-12">
-                <h4 class="display-4">Developed By</h4>
-                <h6 class="display-6">
-                    <a href="https://crypto-navdeep.github.io/">crypto-navdeep</a> • <a href="https//ved-programmer.github.io/">ved-programmer</a>
-                </h6>
+            <div class="col-md-10">
+                <!-- <h4 class="display-4">Developed By</h4> -->
+                <h5><a href="//github.com/crypto-navdeep/Pig-Latin">Pig-Latin</a> project is made and maintained by <a href="//crypto-navdeep.github.io/">crypto-navdeep</a> • <a href="//ved-programmer.github.io/">ved-programmer</a></h5>
             </div>
-            <div class="col-md-3 col-12"></div>
+            <div class="col-md-2">
+                <a href="//github.com/crypto-navdeep/Pig-Latin"><img src="//img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt=""></a>
+            </div>
         </div>
     </div>
-
     <!-- Bootstrap JavaScript CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="libs/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="script1.js"></script>
 </body>
